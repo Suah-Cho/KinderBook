@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="58dp"
+        android:gravity="center|center_vertical"
+        android:text="급 식 표"
+        android:textAlignment="center"
+        android:textColor="@color/main_color"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="647dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/yesterday"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/text_background2"
+            android:gravity="center_vertical"
+            android:text="YESTERDAY"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/yester_text"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:text=" "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:background="@drawable/text_background"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/text_background2"
+            android:gravity="center_vertical"
+            android:text="TODAY"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/to_text"
+            android:layout_width="match_parent"
+            android:background="@drawable/text_background"
+            android:layout_height="151dp"
+            android:text=" "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tomorrow"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@drawable/text_background2"
+            android:gravity="center_vertical"
+            android:text="TOMORROW"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/tomo_text"
+            android:layout_width="match_parent"
+            android:background="@drawable/text_background"
+            android:layout_height="147dp"
+            android:text=" "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.난류, 2.우유, 3.메밀, 4.땅콩, 5.대두, 6.밀, 7.고등어, 8.게, 9.새우, 10.돼지고기, 11.복숭아, 12.토마토, 13.아황산염, 14.호두, 15.닭고기, 16.쇠고기, 17.오징어, 18.조개류(굴,전복,홍합 등)" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
